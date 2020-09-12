@@ -1,0 +1,25 @@
+{
+  "name": "me-api",
+  "version": "1.0.0",
+  "description": "server and api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "production": "NODE_ENV='production' node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "AsaTirsen/jsramverk"
+  },
+  "keywords": [],
+  "author": "Asa Tirsen",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "sqlite3": "^5.0.0"
+  }
+}
