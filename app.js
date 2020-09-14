@@ -9,6 +9,7 @@ const port = 1337;
 const app = express();
 
 app.use(cors());
+app.use(express.json());
 
 app.use('/', index);
 

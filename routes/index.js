@@ -2,20 +2,25 @@ var express = require('express');
 var router = express.Router();
 const texts = require('../models/texts')
 
-router.get('/', function(req, res, next) {
+
+router.get('/', function (req, res, next) {
     texts.getText(res, "Lite om mig");
 });
 
-module.exports = router;
-// router.get('/', (req, res) => orders.getAllOrders(res, req.query.api_key));
+router.post('/', function (req, res) {
+    texts.addText(res, req.body);
+});
 
-// getAllProducts: function(res, apiKey, status=200) {
-//     db.all("SELECT " + products.dataFields + " FROM products WHERE apiKey = ?",
-//         apiKey, (err, rows) => {
-//             if (err) {
-//                 return products.errorResponse(res, "/products", err);
-//             }
-//
-//             res.status(status).json( { data: rows } );
-//         });
-// },
+router.get('/reports/week/1', function (req, res, next) {
+    texts.getText(res, "Redovisning vecka 1");
+});
+
+router.get('/reports/week/2', function (req, res, next) {
+    texts.getText(res, "Redovisning vecka 2");
+});
+
+router.post("/reports", function (req, res) {
+    texts.addText(res, req.body);
+});
+
+module.exports = router;
