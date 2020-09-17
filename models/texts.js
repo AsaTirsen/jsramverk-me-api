@@ -3,9 +3,10 @@ const db = new sqlite3.Database('./db/texts.sqlite');
 
 const texts = {
     addText: function (res, body) {
-        db.run("INSERT INTO texts (title, longtext) VALUES (?, ?)",
+        db.run("INSERT INTO texts (title, longtext, week) VALUES (?, ?, ?)",
             body.title,
             body.text,
+            body.week,
             function (err) {
                 if (err) {
                     return res.status(500).json({
@@ -35,7 +36,7 @@ const texts = {
                     });
                 }
 
-                res.status(200).json({data: rows})
+                res.json({data: rows})
             });
     },
     getText:function(res, title){
@@ -54,6 +55,24 @@ const texts = {
                     });
                 }
                res.json({ data: rows });
+            });
+    },
+    getReport:function(res, week){
+        let sql = `SELECT * FROM texts WHERE week = ?`;
+        db.all(
+            sql, week,
+            function (err, rows) {
+                if (err) {
+                    res.status(500).json({
+                        errors: {
+                            status: 500,
+                            source: "/texts",
+                            title: "Database error",
+                            detail: err.message
+                        }
+                    });
+                }
+                res.json({ data: rows });
             });
     },
     deleteText:function(res, id) {

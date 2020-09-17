@@ -10,30 +10,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51229168-12a8-4c90-8bd3-4fc81f34570e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/103de369-8bc1-42fe-bcdf-fca761e67ce2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/me-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checkPassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hashPassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minaBarn.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/addUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/texts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+    <list default="true" id="51229168-12a8-4c90-8bd3-4fc81f34570e" name="Default Changelist" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/103de369-8bc1-42fe-bcdf-fca761e67ce2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/103de369-8bc1-42fe-bcdf-fca761e67ce2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/addUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/addUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/texts.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/texts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reports.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,23 +66,13 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.app.js">
-    <configuration name="addUser.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/models/addUser.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager">
+    <configuration name="app.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
+      <envs>
+        <env name="JWT_SECRET" value="minhemlighet" />
+      </envs>
       <method v="2" />
     </configuration>
-    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/routes/index.js" working-dir="$PROJECT_DIR$/routes">
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Node.js.app.js" />
-        <item itemvalue="Node.js.index.js" />
-        <item itemvalue="Node.js.addUser.js" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -94,8 +82,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599805626445</updated>
-      <workItem from="1599805627654" duration="19632000" />
+      <workItem from="1599805627654" duration="65395000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1599902561587</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599902561587</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Functioning: entering text through FE to API, presenting text to FE from API">
+      <created>1600075164316</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600075164316</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Gets reports if linked clicked&#10;encryption works. getReport fn added">
+      <created>1600251959533</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600251959533</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,31 +122,52 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Functioning: entering text through FE to API, presenting text to FE from API" />
+    <MESSAGE value="Gets reports if linked clicked&#10;encryption works" />
+    <MESSAGE value="Gets reports if linked clicked&#10;encryption works. getReport fn added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gets reports if linked clicked&#10;encryption works. getReport fn added" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="321" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599814252002">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="68" y="286" key="#SQL_Dialects" timestamp="1600251538736">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="321" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1599814252002" />
-    <state x="434" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599812805637">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="68" y="286" key="#SQL_Dialects/0.0.1440.900@0.0.1440.900" timestamp="1600251538736" />
+    <state x="321" y="107" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600257192361">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="321" y="107" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1600257192361" />
+    <state x="321" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1599983901060" />
+    <state x="434" y="253" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600324016738">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="434" y="253" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600324016738" />
     <state x="434" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1599812805637" />
-    <state width="1396" height="231" key="GridCell.Tab.0.bottom" timestamp="1599902392059">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="711" y="177" key="EnvironmentVariablesDialog" timestamp="1600330227849">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="231" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1599902392059" />
-    <state width="1396" height="231" key="GridCell.Tab.0.center" timestamp="1599902392059">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="711" y="177" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1600330227849" />
+    <state width="1398" height="231" key="GridCell.Tab.0.bottom" timestamp="1600349650102">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="231" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1599902392059" />
-    <state width="1396" height="231" key="GridCell.Tab.0.left" timestamp="1599902392058">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1398" height="231" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600349650102" />
+    <state width="1396" height="231" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1599984153873" />
+    <state width="1398" height="231" key="GridCell.Tab.0.center" timestamp="1600349650100">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="231" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1599902392058" />
-    <state width="1396" height="231" key="GridCell.Tab.0.right" timestamp="1599902392059">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1398" height="231" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600349650100" />
+    <state width="1396" height="231" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1599984153872" />
+    <state width="1398" height="231" key="GridCell.Tab.0.left" timestamp="1600349650099">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="231" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1599902392059" />
+    <state width="1398" height="231" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600349650099" />
+    <state width="1396" height="231" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1599984153870" />
+    <state width="1398" height="231" key="GridCell.Tab.0.right" timestamp="1600349650101">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="231" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600349650101" />
+    <state width="1396" height="231" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1599984153873" />
     <state width="243" height="457" key="HiddenNamespacesPopup" timestamp="1599814271395">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -145,10 +176,24 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="222" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1599902513108" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1599902422651">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="500" height="457" key="SwitcherDM" timestamp="1600336605628">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.1440.877@0.23.1440.877" timestamp="1599902422651" />
+    <state width="500" height="457" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1600336605628" />
+    <state width="500" height="445" key="SwitcherDM/0.23.1440.877@0.23.1440.877" timestamp="1599983862382" />
+    <state x="458" y="262" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1599984264356">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="262" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.1440.900@0.0.1440.900" timestamp="1599984264356" />
+    <state x="549" y="160" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1600174873612">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="549" y="160" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1440.900@0.0.1440.900" timestamp="1600174873612" />
+    <state x="422" y="198" width="598" height="503" key="find.popup" timestamp="1600175038438">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="422" y="198" width="598" height="503" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1600175038438" />
+    <state x="422" y="216" width="598" height="490" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1599984147312" />
     <state x="386" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1599814202233">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

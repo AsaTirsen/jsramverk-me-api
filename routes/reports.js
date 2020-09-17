@@ -1,0 +1,35 @@
+var express = require('express');
+var router = express.Router();
+const texts = require('../models/texts')
+const jwt = require('jsonwebtoken');
+
+
+router.get('/week/1', function (req, res, next) {
+    texts.getReport(res, '1');
+});
+
+router.get('/week/2', function (req, res, next) {
+    texts.getReport(res, "2");
+});
+
+router.get('/', function (req, res) {
+    texts.getTexts(res, req.body);
+});
+
+router.post("/",
+    (req, res, next) => checkToken(req, res, next),
+    (req, res) =>  texts.addText(res, req.body));
+
+function checkToken(req, res, next) {
+    const token = req.headers['x-access-token'];
+
+    jwt.verify(token, process.env.JWT_SECRET, function(err) {
+        if (err) {
+            console.log("Token not verified")
+        }
+        console.log("Token verified")
+
+        next();
+    });
+}
+module.exports = router;

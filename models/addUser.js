@@ -1,63 +1,61 @@
 const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('./db/texts.sqlite');
-//
-// db.run("INSERT INTO users (email, password) VALUES (?, ?)",
-//     "user@example.com",
-//     "superlonghashedpasswordthatwewillseehowtohashinthenextsection", (err) => {
-//         if (err) {
-//             console.log(err);
-//         } else {
-//             console.log("works");
-//         }
-//     });
+const bcrypt = require('bcryptjs');
 
-// db.run("INSERT INTO test (testColumn) VALUES(?)",
-//     'test is done', (err) => {
-//     if (err) {
-//         console.log(err);
-//     } else {
-//         console.log("test works")
-//     }
-// });
-const test = {
-    getAllOrders: function (
-        res,
-        status = 200,
-    ) {
-        let sql = `SELECT * FROM test`;
 
-        db.all(
-            sql,
-            function (err, rows) {
+const addUser = {
+    addUser: function (res, body) {
+        const email = body.email;
+        const password = body.password;
+        const saltRounds = 10;
+
+
+        if (!email || !password) {
+            return res.status(401).json({
+                errors: {
+                    status: 401,
+                    source: "/register/",
+                    title: "Email or password missing",
+                    detail: "Email or password missing in request"
+                }
+            });
+        }
+
+        bcrypt.hash(password, saltRounds, function(err, hash) {
+            if (err) {
+                return res.status(500).json({
+                    errors: {
+                        status: 500,
+                        source: "/register",
+                        title: "bcrypt error",
+                        detail: "bcrypt error"
+                    }
+                });
+            }
+
+        db.run("INSERT INTO users (email, password) VALUES (?, ?)",
+            email,
+            hash, (err) => {
                 if (err) {
-                    res.status(500).json({
+                    return res.status(500).json({
                         errors: {
                             status: 500,
-                            source: "/orders",
+                            source: "/register",
                             title: "Database error",
                             detail: err.message
                         }
                     });
                 }
 
-                res.status(status).json({data: rows})
+                return res.status(201).json({
+                    data: {
+                        message: "User successfully registered."
+                    }
+                });
             });
+    })
     },
 }
 
-module.exports = test;
-// db.get(sql, (err, row) => {
-//     if (err) {
-//         throw err;
-//     } else {
-//         console.log(row);
-//     }
-// });
 
-// db.each(sql, (err, row) => {
-//     if (err) {
-//         throw err;
-//     } else {
-//         console.log(row);
-//     }
-// });
+module.exports = addUser;
