@@ -75,23 +75,48 @@ const texts = {
                 res.json({ data: rows });
             });
     },
-    deleteText:function(res, id) {
-        let sql = `DELETE * FROM texts WHERE id = ?`;
-        db.all(
-            sql, id,
-            function (err, rows) {
+    updateText: function (res, body) {
+        console.log(body)
+        db.run(`UPDATE texts
+                    SET title = ?,
+                        week = ?,
+                        longtext = ?
+                    WHERE
+                        id =  ?;`,
+            body.title,
+            body.week,
+            body.longtext,
+            body.id,
+            function (err) {
                 if (err) {
-                    res.status(500).json({
+                    return res.status(500).json({
                         errors: {
                             status: 500,
-                            source: "/texts",
+                            source: "POST /texts",
                             title: "Database error",
                             detail: err.message
                         }
                     });
                 }
-            });
-    },
+            })
+},
+    // deleteText:function(res, id) {
+    //     let sql = `DELETE * FROM texts WHERE id = ?`;
+    //     db.all(
+    //         sql, id,
+    //         function (err, rows) {
+    //             if (err) {
+    //                 res.status(500).json({
+    //                     errors: {
+    //                         status: 500,
+    //                         source: "/texts",
+    //                         title: "Database error",
+    //                         detail: err.message
+    //                     }
+    //                 });
+    //             }
+    //         });
+    // },
 };
 
 module.exports = texts;
