@@ -12,6 +12,10 @@ router.get('/week/2', function (req, res) {
     texts.getReport(res, "2");
 });
 
+router.get('/week/3', function (req, res) {
+    texts.getReport(res, "3");
+});
+
 router.get('/', function (req, res) {
     texts.getTexts(res, req.body);
 });

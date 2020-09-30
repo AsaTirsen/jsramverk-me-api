@@ -12,8 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="51229168-12a8-4c90-8bd3-4fc81f34570e" name="Default Changelist" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/texts.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/texts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599805626445</updated>
-      <workItem from="1599805627654" duration="68893000" />
+      <workItem from="1599805627654" duration="74584000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1599902561587</created>
@@ -104,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600361419773</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="All functionality in place">
+      <created>1600670412146</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600670412146</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

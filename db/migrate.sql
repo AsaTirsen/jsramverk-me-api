@@ -13,4 +13,3 @@ CREATE TABLE IF NOT EXISTS texts
     longtext VARCHAR(3000) NOT NULL
 );
 
--- DELETE FROM texts WHERE id=2;
