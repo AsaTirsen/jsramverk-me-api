@@ -4,17 +4,17 @@ const texts = require('../models/texts')
 const jwt = require('jsonwebtoken');
 
 
-router.get('/week/1', function (req, res) {
-    texts.getReport(res, '1');
+router.get('/week/:week', function (req, res) {
+    texts.getReport(res, 'week');
 });
-
-router.get('/week/2', function (req, res) {
-    texts.getReport(res, "2");
-});
-
-router.get('/week/3', function (req, res) {
-    texts.getReport(res, "3");
-});
+//
+// router.get('/week/2', function (req, res) {
+//     texts.getReport(res, "2");
+// });
+//
+// router.get('/week/3', function (req, res) {
+//     texts.getReport(res, "3");
+// });
 
 router.get('/', function (req, res) {
     texts.getTexts(res, req.body);
