@@ -12,7 +12,9 @@
   <component name="ChangeListManager">
     <list default="true" id="51229168-12a8-4c90-8bd3-4fc81f34570e" name="Default Changelist" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reports.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599805626445</updated>
-      <workItem from="1599805627654" duration="74584000" />
+      <workItem from="1599805627654" duration="82313000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1599902561587</created>
@@ -110,7 +112,28 @@
       <option name="project" value="LOCAL" />
       <updated>1600670412146</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added route in reports">
+      <created>1601459188978</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601459188978</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added route with param in reports">
+      <created>1601469262740</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601469262740</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added route with param in reports">
+      <created>1601469333448</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601469333448</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +157,9 @@
     <MESSAGE value="Gets reports if linked clicked&#10;encryption works. getReport fn added" />
     <MESSAGE value="Functionality in place except edit" />
     <MESSAGE value="All functionality in place" />
-    <option name="LAST_COMMIT_MESSAGE" value="All functionality in place" />
+    <MESSAGE value="added route in reports" />
+    <MESSAGE value="added route with param in reports" />
+    <option name="LAST_COMMIT_MESSAGE" value="added route with param in reports" />
   </component>
   <component name="WindowStateProjectService">
     <state x="68" y="286" key="#SQL_Dialects" timestamp="1600670346571">
@@ -151,30 +176,38 @@
     </state>
     <state x="434" y="253" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600324016738" />
     <state x="434" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1599812805637" />
+    <state x="100" y="123" width="1631" height="1120" key="DiffContextDialog" timestamp="1601535724550">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="100" y="123" width="1631" height="1120" key="DiffContextDialog/0.23.3440.1417@0.23.3440.1417" timestamp="1601535724550" />
     <state x="711" y="177" key="EnvironmentVariablesDialog" timestamp="1600330227849">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="711" y="177" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1600330227849" />
-    <state width="1398" height="231" key="GridCell.Tab.0.bottom" timestamp="1600669125410">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1789" height="355" key="GridCell.Tab.0.bottom" timestamp="1601547473486">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600669125410" />
     <state width="1396" height="231" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1599984153873" />
-    <state width="1398" height="231" key="GridCell.Tab.0.center" timestamp="1600669125409">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1789" height="355" key="GridCell.Tab.0.bottom/0.23.3440.1417@0.23.3440.1417" timestamp="1601547473486" />
+    <state width="1789" height="355" key="GridCell.Tab.0.center" timestamp="1601547473486">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600669125409" />
     <state width="1396" height="231" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1599984153872" />
-    <state width="1398" height="231" key="GridCell.Tab.0.left" timestamp="1600669125408">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1789" height="355" key="GridCell.Tab.0.center/0.23.3440.1417@0.23.3440.1417" timestamp="1601547473486" />
+    <state width="1789" height="355" key="GridCell.Tab.0.left" timestamp="1601547473485">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600669125408" />
     <state width="1396" height="231" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1599984153870" />
-    <state width="1398" height="231" key="GridCell.Tab.0.right" timestamp="1600669125409">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1789" height="355" key="GridCell.Tab.0.left/0.23.3440.1417@0.23.3440.1417" timestamp="1601547473485" />
+    <state width="1789" height="355" key="GridCell.Tab.0.right" timestamp="1601547473486">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600669125409" />
     <state width="1396" height="231" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1599984153873" />
+    <state width="1789" height="355" key="GridCell.Tab.0.right/0.23.3440.1417@0.23.3440.1417" timestamp="1601547473486" />
     <state width="243" height="457" key="HiddenNamespacesPopup" timestamp="1599814271395">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -196,11 +229,12 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="549" y="160" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1440.900@0.0.1440.900" timestamp="1600174873612" />
-    <state x="422" y="198" width="598" height="503" key="find.popup" timestamp="1600175038438">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="1008" y="335" width="1429" height="792" key="find.popup" timestamp="1601542213885">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state x="422" y="198" width="598" height="503" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1600175038438" />
     <state x="422" y="216" width="598" height="490" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1599984147312" />
+    <state x="1008" y="335" width="1429" height="792" key="find.popup/0.23.3440.1417@0.23.3440.1417" timestamp="1601542213885" />
     <state x="386" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1599814202233">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
