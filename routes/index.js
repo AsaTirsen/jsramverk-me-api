@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const texts = require('../models/texts')
+const texts = require('../models/texts');
 
-router.get('/', function (req, res, next) {
+router.get('/', function (req, res) {
     texts.getText(res, "Lite om mig");
 });
 

@@ -10,10 +10,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51229168-12a8-4c90-8bd3-4fc81f34570e" name="Default Changelist" comment="Initial commit">
+    <list default="true" id="51229168-12a8-4c90-8bd3-4fc81f34570e" name="Default Changelist" comment="Changes to routes">
+      <change afterPath="$PROJECT_DIR$/db/database.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/reset_test_db.bash" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/reports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/checkPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/hashPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/addUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/addUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/texts.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/texts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reports.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +61,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -55,17 +72,61 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/models" />
+      <recent name="$PROJECT_DIR$/db" />
+      <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/models" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Mocha.Reports">
     <configuration name="app.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
       <envs>
         <env name="JWT_SECRET" value="minhemlighet" />
       </envs>
       <method v="2" />
     </configuration>
+    <configuration name="Reports" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/reports.js</test-file>
+      <test-names>
+        <name value="Reports" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Reports.should insert a report" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/reports.js</test-file>
+      <test-names>
+        <name value="Reports" />
+        <name value="should insert a report" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.app.js" />
+      <item itemvalue="Mocha.Reports" />
+      <item itemvalue="Mocha.Reports.should insert a report" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Mocha.Reports" />
+        <item itemvalue="Mocha.Reports.should insert a report" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -75,7 +136,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599805626445</updated>
-      <workItem from="1599805627654" duration="82313000" />
+      <workItem from="1599805627654" duration="128649000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1599902561587</created>
@@ -133,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601469333448</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Changes to routes">
+      <created>1601547850688</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601547850688</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,23 +227,30 @@
     <MESSAGE value="All functionality in place" />
     <MESSAGE value="added route in reports" />
     <MESSAGE value="added route with param in reports" />
-    <option name="LAST_COMMIT_MESSAGE" value="added route with param in reports" />
+    <MESSAGE value="Changes to routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes to routes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="68" y="286" key="#SQL_Dialects" timestamp="1600670346571">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="68" y="286" key="#SQL_Dialects/0.0.1440.900@0.0.1440.900" timestamp="1600670346571" />
-    <state x="321" y="107" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600257192361">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="767" y="191" width="1071" height="796" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601982532796">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state x="321" y="107" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1600257192361" />
     <state x="321" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1599983901060" />
-    <state x="434" y="253" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600324016738">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="767" y="191" width="1071" height="796" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.3440.1417@0.23.3440.1417" timestamp="1601982532796" />
+    <state x="218" y="123" width="1631" height="1120" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1601983228397">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="218" y="123" width="1631" height="1120" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.3440.1417@0.23.3440.1417" timestamp="1601983228397" />
+    <state x="1037" y="421" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601885214686">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state x="434" y="253" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600324016738" />
     <state x="434" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1599812805637" />
+    <state x="1037" y="421" key="#com.intellij.fileTypes.FileTypeChooser/0.23.3440.1417@0.23.3440.1417" timestamp="1601885214686" />
     <state x="100" y="123" width="1631" height="1120" key="DiffContextDialog" timestamp="1601535724550">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
@@ -184,30 +259,78 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="711" y="177" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1600330227849" />
-    <state width="1789" height="355" key="GridCell.Tab.0.bottom" timestamp="1601547473486">
+    <state width="1789" height="355" key="GridCell.Tab.0.bottom" timestamp="1602055530681">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600669125410" />
     <state width="1396" height="231" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1599984153873" />
-    <state width="1789" height="355" key="GridCell.Tab.0.bottom/0.23.3440.1417@0.23.3440.1417" timestamp="1601547473486" />
-    <state width="1789" height="355" key="GridCell.Tab.0.center" timestamp="1601547473486">
+    <state width="1789" height="355" key="GridCell.Tab.0.bottom/0.23.3440.1417@0.23.3440.1417" timestamp="1602055530681" />
+    <state width="1789" height="355" key="GridCell.Tab.0.center" timestamp="1602055530677">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600669125409" />
     <state width="1396" height="231" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1599984153872" />
-    <state width="1789" height="355" key="GridCell.Tab.0.center/0.23.3440.1417@0.23.3440.1417" timestamp="1601547473486" />
-    <state width="1789" height="355" key="GridCell.Tab.0.left" timestamp="1601547473485">
+    <state width="1789" height="355" key="GridCell.Tab.0.center/0.23.3440.1417@0.23.3440.1417" timestamp="1602055530677" />
+    <state width="1789" height="355" key="GridCell.Tab.0.left" timestamp="1602055530672">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600669125408" />
     <state width="1396" height="231" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1599984153870" />
-    <state width="1789" height="355" key="GridCell.Tab.0.left/0.23.3440.1417@0.23.3440.1417" timestamp="1601547473485" />
-    <state width="1789" height="355" key="GridCell.Tab.0.right" timestamp="1601547473486">
+    <state width="1789" height="355" key="GridCell.Tab.0.left/0.23.3440.1417@0.23.3440.1417" timestamp="1602055530672" />
+    <state width="1789" height="355" key="GridCell.Tab.0.right" timestamp="1602055530680">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state width="1398" height="231" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600669125409" />
     <state width="1396" height="231" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1599984153873" />
-    <state width="1789" height="355" key="GridCell.Tab.0.right/0.23.3440.1417@0.23.3440.1417" timestamp="1601547473486" />
+    <state width="1789" height="355" key="GridCell.Tab.0.right/0.23.3440.1417@0.23.3440.1417" timestamp="1602055530680" />
+    <state width="1789" height="463" key="GridCell.Tab.1.bottom" timestamp="1601990402318">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1789" height="463" key="GridCell.Tab.1.bottom/0.23.3440.1417@0.23.3440.1417" timestamp="1601990402318" />
+    <state width="1789" height="463" key="GridCell.Tab.1.center" timestamp="1601990402317">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1789" height="463" key="GridCell.Tab.1.center/0.23.3440.1417@0.23.3440.1417" timestamp="1601990402317" />
+    <state width="1789" height="463" key="GridCell.Tab.1.left" timestamp="1601990402317">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1789" height="463" key="GridCell.Tab.1.left/0.23.3440.1417@0.23.3440.1417" timestamp="1601990402317" />
+    <state width="1789" height="463" key="GridCell.Tab.1.right" timestamp="1601990402317">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1789" height="463" key="GridCell.Tab.1.right/0.23.3440.1417@0.23.3440.1417" timestamp="1601990402317" />
+    <state width="1789" height="463" key="GridCell.Tab.2.bottom" timestamp="1601990402319">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1789" height="463" key="GridCell.Tab.2.bottom/0.23.3440.1417@0.23.3440.1417" timestamp="1601990402319" />
+    <state width="1789" height="463" key="GridCell.Tab.2.center" timestamp="1601990402318">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1789" height="463" key="GridCell.Tab.2.center/0.23.3440.1417@0.23.3440.1417" timestamp="1601990402318" />
+    <state width="1789" height="463" key="GridCell.Tab.2.left" timestamp="1601990402318">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1789" height="463" key="GridCell.Tab.2.left/0.23.3440.1417@0.23.3440.1417" timestamp="1601990402318" />
+    <state width="1789" height="463" key="GridCell.Tab.2.right" timestamp="1601990402319">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1789" height="463" key="GridCell.Tab.2.right/0.23.3440.1417@0.23.3440.1417" timestamp="1601990402319" />
+    <state width="1789" height="463" key="GridCell.Tab.3.bottom" timestamp="1601990402320">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1789" height="463" key="GridCell.Tab.3.bottom/0.23.3440.1417@0.23.3440.1417" timestamp="1601990402320" />
+    <state width="1789" height="463" key="GridCell.Tab.3.center" timestamp="1601990402320">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1789" height="463" key="GridCell.Tab.3.center/0.23.3440.1417@0.23.3440.1417" timestamp="1601990402320" />
+    <state width="1789" height="463" key="GridCell.Tab.3.left" timestamp="1601990402319">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1789" height="463" key="GridCell.Tab.3.left/0.23.3440.1417@0.23.3440.1417" timestamp="1601990402319" />
+    <state width="1789" height="463" key="GridCell.Tab.3.right" timestamp="1601990402320">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="1789" height="463" key="GridCell.Tab.3.right/0.23.3440.1417@0.23.3440.1417" timestamp="1601990402320" />
     <state width="243" height="457" key="HiddenNamespacesPopup" timestamp="1599814271395">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -216,11 +339,12 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="222" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1599902513108" />
-    <state width="500" height="457" key="SwitcherDM" timestamp="1600592747899">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1195" height="720" key="SwitcherDM" timestamp="1601990457957">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state width="500" height="457" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1600592747899" />
     <state width="500" height="445" key="SwitcherDM/0.23.1440.877@0.23.1440.877" timestamp="1599983862382" />
+    <state width="1195" height="720" key="SwitcherDM/0.23.3440.1417@0.23.3440.1417" timestamp="1601990457957" />
     <state x="458" y="262" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1599984264356">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -229,27 +353,49 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="549" y="160" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1440.900@0.0.1440.900" timestamp="1600174873612" />
-    <state x="1008" y="335" width="1429" height="792" key="find.popup" timestamp="1601542213885">
+    <state x="218" y="123" width="1631" height="1120" key="com.intellij.history.integration.ui.views.RecentChangeDialog" timestamp="1601886549446">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="218" y="123" width="1631" height="1120" key="com.intellij.history.integration.ui.views.RecentChangeDialog/0.23.3440.1417@0.23.3440.1417" timestamp="1601886549446" />
+    <state x="582" y="419" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1601990040243">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="582" y="419" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.3440.1417@0.23.3440.1417" timestamp="1601990040243" />
+    <state x="1008" y="335" width="1429" height="792" key="find.popup" timestamp="1601983268377">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state x="422" y="198" width="598" height="503" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1600175038438" />
     <state x="422" y="216" width="598" height="490" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1599984147312" />
-    <state x="1008" y="335" width="1429" height="792" key="find.popup/0.23.3440.1417@0.23.3440.1417" timestamp="1601542213885" />
-    <state x="386" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1599814202233">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="1008" y="335" width="1429" height="792" key="find.popup/0.23.3440.1417@0.23.3440.1417" timestamp="1601983268377" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1601648203726">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.23.3440.1417@0.23.3440.1417" timestamp="1601648203726" />
+    <state x="922" y="330" width="1601" height="1093" key="search.everywhere.popup" timestamp="1601983386607">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state x="386" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1599814202233" />
+    <state x="922" y="330" width="1601" height="1093" key="search.everywhere.popup/0.23.3440.1417@0.23.3440.1417" timestamp="1601983386607" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/models/addUser.js</url>
-          <line>22</line>
+          <url>file://$PROJECT_DIR$/models/texts.js</url>
+          <line>5</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/models/texts.js</url>
+          <line>10</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/me_api$Reports.dat" NAME="Reports Coverage Results" MODIFIED="1601990334917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="MochaJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

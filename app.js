@@ -4,8 +4,8 @@ const cors = require('cors');
 const bodyParser = require("body-parser");
 const index = require('./routes/index');
 const reports = require('./routes/reports');
-const register = require('./routes/register')
-const login = require('./routes/login')
+const register = require('./routes/register');
+const login = require('./routes/login');
 
 
 const port = 1337;
@@ -19,7 +19,6 @@ app.use('/', index);
 app.use('/reports', reports);
 app.use('/register', register);
 app.use('/login', login);
-
 
 app.use((req, res, next) => {
     next();
@@ -35,13 +34,21 @@ app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 
+
+
 // Start up server
-app.listen(port, () => console.log(`Example API listening on port ${port}!`));
+const server = app.listen(port, () => console.log(`Example API listening on port ${port}!`));
 // Add routes for 404 and error handling
 // Catch 404 and forward to error handler
-// Put this last
+
+
+//Put this last
 app.use((req, res, next) => {
-    var err = new Error("Not Found");
+    let err = new Error("Not Found");
+
     err.status = 404;
     next(err);
 });
+module.exports = server;
+
+

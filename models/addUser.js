@@ -1,5 +1,5 @@
-const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('./db/texts.sqlite');
+//const sqlite3 = require('sqlite3').verbose();
+const db = require("../db/database.js");
 const bcrypt = require('bcryptjs');
 
 
@@ -33,29 +33,29 @@ const addUser = {
                 });
             }
 
-        db.run("INSERT INTO users (email, password) VALUES (?, ?)",
-            email,
-            hash, (err) => {
-                if (err) {
-                    return res.status(500).json({
-                        errors: {
-                            status: 500,
-                            source: "/register",
-                            title: "Database error",
-                            detail: err.message
+            db.run("INSERT INTO users (email, password) VALUES (?, ?)",
+                email,
+                hash, (err) => {
+                    if (err) {
+                        return res.status(500).json({
+                            errors: {
+                                status: 500,
+                                source: "/register",
+                                title: "Database error",
+                                detail: err.message
+                            }
+                        });
+                    }
+
+                    return res.status(201).json({
+                        data: {
+                            message: "User successfully registered."
                         }
                     });
-                }
-
-                return res.status(201).json({
-                    data: {
-                        message: "User successfully registered."
-                    }
                 });
-            });
-    })
+        });
     },
-}
+};
 
 
 module.exports = addUser;

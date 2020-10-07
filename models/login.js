@@ -1,12 +1,14 @@
-const sqlite3 = require('sqlite3').verbose();
+//const sqlite3 = require('sqlite3').verbose();
 const jwt = require('jsonwebtoken');
-const db = new sqlite3.Database('./db/texts.sqlite');
+const db = require("../db/database.js");
 const bcrypt = require('bcryptjs');
 let secret = process.env.JWT_SECRET;
 
+console.log(secret);
+
 const Login = {
     checkLogin: function(res, body) {
-        console.log(body)
+        console.log(body);
         const email = body.email;
         const password = body.password;
 
@@ -85,6 +87,6 @@ const Login = {
                 });
             });
     },
-}
+};
 
 module.exports = Login;
