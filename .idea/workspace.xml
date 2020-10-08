@@ -10,26 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51229168-12a8-4c90-8bd3-4fc81f34570e" name="Default Changelist" comment="Changes to routes">
-      <change afterPath="$PROJECT_DIR$/db/database.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/reset_test_db.bash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/reports.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="51229168-12a8-4c90-8bd3-4fc81f34570e" name="Default Changelist" comment="Tests for backend in place">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/checkPassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hashPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/hashPassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/addUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/addUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/texts.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/texts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reports.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599805626445</updated>
-      <workItem from="1599805627654" duration="128649000" />
+      <workItem from="1599805627654" duration="131256000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1599902561587</created>
@@ -201,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601547850688</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Tests for backend in place">
+      <created>1602077343108</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602077343109</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +217,8 @@
     <MESSAGE value="added route in reports" />
     <MESSAGE value="added route with param in reports" />
     <MESSAGE value="Changes to routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes to routes" />
+    <MESSAGE value="Tests for backend in place" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests for backend in place" />
   </component>
   <component name="WindowStateProjectService">
     <state x="68" y="286" key="#SQL_Dialects" timestamp="1600670346571">
