@@ -8,6 +8,7 @@ const register = require('./routes/register');
 const login = require('./routes/login');
 
 
+
 const port = 1337;
 
 const app = express();
@@ -23,6 +24,8 @@ app.use('/login', login);
 app.use((req, res, next) => {
     next();
 });
+
+app.use(cors())
 
 // don't show the log when it is test
 if (process.env.NODE_ENV !== 'test') {
