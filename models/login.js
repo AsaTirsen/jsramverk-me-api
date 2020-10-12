@@ -2,9 +2,9 @@
 const jwt = require('jsonwebtoken');
 const db = require("../db/database.js");
 const bcrypt = require('bcryptjs');
-let secret = process.env.JWT_SECRET;
+const envVars = require('../routes/variables')
+let secret = envVars.secret;
 
-console.log(secret);
 
 const Login = {
     checkLogin: function(res, body) {
