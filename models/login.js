@@ -2,7 +2,7 @@
 const jwt = require('jsonwebtoken');
 const db = require("../db/database.js");
 const bcrypt = require('bcryptjs');
-const envVars = require('../routes/variables')
+const envVars = require('../routes/variables');
 let secret = envVars.secret;
 
 

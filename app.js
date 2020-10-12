@@ -6,10 +6,11 @@ const index = require('./routes/index');
 const reports = require('./routes/reports');
 const register = require('./routes/register');
 const login = require('./routes/login');
-const envVars = require('./routes/variables')
+const envVars = require('./routes/variables');
 
 
 const port = envVars.port;
+
 console.log(port);
 const app = express();
 
