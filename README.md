@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/AsaTirsen/jsramverk-me-api.svg?branch=master)](https://travis-ci.org/AsaTirsen/jsramverk-me-api)
+
 ## Available Scripts
 
 In the project directory, you can run:
